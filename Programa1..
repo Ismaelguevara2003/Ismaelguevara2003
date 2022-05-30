@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main()
+{
+
+   float num; 
+   double decimal;
+
+printf("ingrese un número\n");
+scanf("%f", &num);
+
+decimal = num - int(num);
+
+printf("la parte entera del número es: %d\n", int(num));
+printf("la parte decimal del número es: %f\n", decimal);
+ 
+    return 0;
+}
