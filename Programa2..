@@ -1,0 +1,72 @@
+#include<stdio.h>
+
+
+int main()
+{
+
+int elecion;
+int a, b, suma=0, resta=0, multi=1, div;
+float divR; 
+
+printf("ingrese unos de los casos: caso 1 suma\n");
+printf("ingrese unos de los casos: caso 2 resta\n");
+printf("ingrese unos de los casos: caso 3 multiplicación\n");
+printf("ingrese unos de los casos: caso 4 división\n");
+scanf("%d",&elecion);
+
+switch(elecion){
+
+case 1: {//suma 
+printf("usted ha ingresado el módulo de suma\n");
+printf("ingrese el valor de a\n");
+scanf("%d",&a);
+printf("ingrese el valor de b\n");
+scanf("%d",&b);
+suma=a+b;
+printf("la suma es %d\n", suma);
+break;
+}
+
+case 2: {//resta
+
+printf("usted ha ingresado el módulo de resta\n");
+printf("ingrese el valor de a\n");
+scanf("%d",&a);
+printf("ingrese el valor de b\n");
+scanf("%d",&b);
+resta=a-b;
+printf("la resta es %d\n",resta);
+break;
+}
+
+case 3: {//multiplicación
+
+printf("usted ha ingresado al módulo de multiplicación\n");
+printf("ingrese el valor de a\n");
+scanf("%d",&a);
+printf("ingrese el valor de b\n");
+scanf("%d",&b);
+multi=a*b;
+printf("la multiplicación es %d\n",multi);
+break;
+}
+
+case 4: {//división
+
+printf("usted ha ingresado al módulo de división\n");
+printf("ingresé el valor de a\n");
+scanf("%d",&a);
+printf("ingrese el valor de b\n");
+scanf("%d",&b);
+div=a/b;
+printf("la división entera es %d\n",div);
+
+divR=float(a)/float (b);
+
+printf("\n la división decimal es: %.2f",divR);
+break;
+}
+default: printf("la opción es invalida");
+}
+return 0;
+}
